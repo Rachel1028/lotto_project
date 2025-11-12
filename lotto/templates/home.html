@@ -1,0 +1,7 @@
+<h2>🎲 로또 구매 내역</h2>
+<a href="/buy/">티켓 구매하기</a>
+<ul>
+{% for t in tickets %}
+  <li>{{ t.user.username }} : {{ t.numbers }}</li>
+{% endfor %}
+</ul>
